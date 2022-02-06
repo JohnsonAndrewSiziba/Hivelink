@@ -31,6 +31,9 @@ const routes = [
     path: '/contact',
     name: 'ContactUs',
     component: () => import('../views/ContactUs.vue')
+  },
+  { path: '/:pathMatch(.*)*',
+    redirect: '/'
   }
 ]
 
